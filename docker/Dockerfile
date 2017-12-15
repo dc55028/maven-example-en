@@ -1,4 +1,5 @@
 FROM debian:latest
+MAINTAINER domcomte
 
 # shell to start from Kitematic
 ENV DEBIAN_FRONTEND=noninteractive
