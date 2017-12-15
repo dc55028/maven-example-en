@@ -1,0 +1,14 @@
+sudo: required
+
+language: sh
+
+services:
+  - docker
+
+before_install:
+- docker build -t domcomte/maven-example-en-builder
+- docker run --name mvn-builder domcomte/maven-example-en-builder
+- docker cp mvn-builder:/root/maven-example-en/target/book-mvnex.pdf .
+- docker cp mvn-builder:/root/maven-example-en/target/book-mvnex.epub .
+- docker cp mvn-builder:/root/maven-example-en/target/book-mvnex.html .
+
