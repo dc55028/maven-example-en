@@ -20,4 +20,4 @@ RUN apt-get update && \
 
 WORKDIR /root
 
-CMD cd /root && git clone https://github.com/sonatype/maven-example-en.git && cd mvn-example-en && ./build.sh -f pdf,chunked,epub,html
+CMD cd /root && git clone https://github.com/sonatype/maven-example-en.git && cd maven-example-en && ./build.sh -f pdf,chunked,epub,html
