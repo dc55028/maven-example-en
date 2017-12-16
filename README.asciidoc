@@ -1,4 +1,4 @@
-== Maven by Example
+== Maven by Example image:https://travis-ci.org/dc55028/maven-example-en.svg?branch=master["Build Status", link="https://travis-ci.org/dc55028/maven-example-en"]
 
 === About the Book
 
